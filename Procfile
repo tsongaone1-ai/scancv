@@ -1,0 +1,1 @@
+web: gunicorn ecv.wsgi --log-file -
