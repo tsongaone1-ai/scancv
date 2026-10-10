@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create eCV — ThriveCV</title>
+</head>
+<body style="font-family:system-ui;max-width:36rem;margin:2rem auto;padding:1rem;background:#f6f1e8;color:#0b1f33">
+  <p><strong>ThriveCV</strong></p>
+  <h1>Create your eCV</h1>
+  <form method="post">
+    {% csrf_token %}
+    <p>Name<br><input name="name" required></p>
+    <p>City<br><input name="city" required></p>
+    <p>One skill<br><input name="skill" required></p>
+    <button type="submit">Save</button>
+  </form>
+</body>
+</html>
