@@ -6,7 +6,7 @@ from django.utils.text import slugify
 import io
 import qrcode
 
-from ecv.models import Ecv
+from scancv.ecv.models import Ecv
 
 def home(request):
     if request.method == "POST":
